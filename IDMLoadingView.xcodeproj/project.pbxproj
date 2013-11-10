@@ -23,6 +23,9 @@
 		95CAE52D182D5FCA00CE66AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95CAE509182D5FCA00CE66AD /* UIKit.framework */; };
 		95CAE535182D5FCA00CE66AD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95CAE533182D5FCA00CE66AD /* InfoPlist.strings */; };
 		95CAE537182D5FCA00CE66AD /* IDMLoadingViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CAE536182D5FCA00CE66AD /* IDMLoadingViewTests.m */; };
+		95CAE54F182D648600CE66AD /* UIViewControllerContentUnavailableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CAE54E182D648600CE66AD /* UIViewControllerContentUnavailableView.m */; };
+		95CAE554182D658300CE66AD /* UIViewController+States.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CAE553182D658300CE66AD /* UIViewController+States.m */; };
+		95CAE559182D6BB800CE66AD /* SAMLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CAE558182D6BB800CE66AD /* SAMLoadingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,12 @@
 		95CAE532182D5FCA00CE66AD /* IDMLoadingViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IDMLoadingViewTests-Info.plist"; sourceTree = "<group>"; };
 		95CAE534182D5FCA00CE66AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		95CAE536182D5FCA00CE66AD /* IDMLoadingViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDMLoadingViewTests.m; sourceTree = "<group>"; };
+		95CAE54D182D648600CE66AD /* UIViewControllerContentUnavailableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewControllerContentUnavailableView.h; sourceTree = "<group>"; };
+		95CAE54E182D648600CE66AD /* UIViewControllerContentUnavailableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerContentUnavailableView.m; sourceTree = "<group>"; };
+		95CAE552182D658300CE66AD /* UIViewController+States.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+States.h"; sourceTree = "<group>"; };
+		95CAE553182D658300CE66AD /* UIViewController+States.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+States.m"; sourceTree = "<group>"; };
+		95CAE557182D6BB800CE66AD /* SAMLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMLoadingView.h; sourceTree = "<group>"; };
+		95CAE558182D6BB800CE66AD /* SAMLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMLoadingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +96,8 @@
 		95CAE4F9182D5FCA00CE66AD = {
 			isa = PBXGroup;
 			children = (
-				95CAE541182D5FE600CE66AD /* Classes */,
+				95CAE550182D64CF00CE66AD /* Categories */,
+				95CAE54A182D645C00CE66AD /* Views */,
 				95CAE50B182D5FCA00CE66AD /* IDMLoadingViewDemo */,
 				95CAE530182D5FCA00CE66AD /* IDMLoadingViewTests */,
 				95CAE504182D5FCA00CE66AD /* Frameworks */,
@@ -162,11 +172,48 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		95CAE541182D5FE600CE66AD /* Classes */ = {
+		95CAE54A182D645C00CE66AD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				95CAE556182D6BAB00CE66AD /* SAMLoadingView */,
+				95CAE54C182D646800CE66AD /* Content Unavailable View */,
 			);
-			name = Classes;
+			name = Views;
+			sourceTree = "<group>";
+		};
+		95CAE54C182D646800CE66AD /* Content Unavailable View */ = {
+			isa = PBXGroup;
+			children = (
+				95CAE54D182D648600CE66AD /* UIViewControllerContentUnavailableView.h */,
+				95CAE54E182D648600CE66AD /* UIViewControllerContentUnavailableView.m */,
+			);
+			name = "Content Unavailable View";
+			sourceTree = "<group>";
+		};
+		95CAE550182D64CF00CE66AD /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				95CAE555182D658600CE66AD /* UIViewController + States */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		95CAE555182D658600CE66AD /* UIViewController + States */ = {
+			isa = PBXGroup;
+			children = (
+				95CAE552182D658300CE66AD /* UIViewController+States.h */,
+				95CAE553182D658300CE66AD /* UIViewController+States.m */,
+			);
+			name = "UIViewController + States";
+			sourceTree = "<group>";
+		};
+		95CAE556182D6BAB00CE66AD /* SAMLoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				95CAE557182D6BB800CE66AD /* SAMLoadingView.h */,
+				95CAE558182D6BB800CE66AD /* SAMLoadingView.m */,
+			);
+			name = SAMLoadingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,10 +314,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95CAE554182D658300CE66AD /* UIViewController+States.m in Sources */,
 				95CAE516182D5FCA00CE66AD /* AppDelegate.m in Sources */,
 				95CAE51F182D5FCA00CE66AD /* MasterViewController.m in Sources */,
 				95CAE512182D5FCA00CE66AD /* main.m in Sources */,
 				95CAE522182D5FCA00CE66AD /* DetailViewController.m in Sources */,
+				95CAE559182D6BB800CE66AD /* SAMLoadingView.m in Sources */,
+				95CAE54F182D648600CE66AD /* UIViewControllerContentUnavailableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +539,7 @@
 				95CAE53C182D5FCA00CE66AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95CAE53D182D5FCA00CE66AD /* Build configuration list for PBXNativeTarget "IDMLoadingViewTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +548,7 @@
 				95CAE53F182D5FCA00CE66AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
