@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9518F34F187C7D8F005FE2DD /* UIViewController+States.m in Sources */ = {isa = PBXBuildFile; fileRef = 9518F34E187C7D8F005FE2DD /* UIViewController+States.m */; };
 		95BCBF82187C75EB00D5AEAB /* IDMContentUnavailableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BCBF80187C75EA00D5AEAB /* IDMContentUnavailableView.m */; };
 		95BCBF83187C75EB00D5AEAB /* IDMContentUnavailableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95BCBF81187C75EA00D5AEAB /* IDMContentUnavailableView.xib */; };
 		95BCBF86187C75EF00D5AEAB /* IDMLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BCBF85187C75EF00D5AEAB /* IDMLoadingView.m */; };
@@ -26,7 +27,6 @@
 		95CAE52D182D5FCA00CE66AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95CAE509182D5FCA00CE66AD /* UIKit.framework */; };
 		95CAE535182D5FCA00CE66AD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95CAE533182D5FCA00CE66AD /* InfoPlist.strings */; };
 		95CAE537182D5FCA00CE66AD /* IDMLoadingViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CAE536182D5FCA00CE66AD /* IDMLoadingViewTests.m */; };
-		95CAE554182D658300CE66AD /* UIViewController+States.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CAE553182D658300CE66AD /* UIViewController+States.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9518F34D187C7D8F005FE2DD /* UIViewController+States.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+States.h"; path = "Classes/UIViewController+States.h"; sourceTree = "<group>"; };
+		9518F34E187C7D8F005FE2DD /* UIViewController+States.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+States.m"; path = "Classes/UIViewController+States.m"; sourceTree = "<group>"; };
 		95BCBF7F187C75EA00D5AEAB /* IDMContentUnavailableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IDMContentUnavailableView.h; path = Classes/IDMContentUnavailableView.h; sourceTree = "<group>"; };
 		95BCBF80187C75EA00D5AEAB /* IDMContentUnavailableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IDMContentUnavailableView.m; path = Classes/IDMContentUnavailableView.m; sourceTree = "<group>"; };
 		95BCBF81187C75EA00D5AEAB /* IDMContentUnavailableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = IDMContentUnavailableView.xib; path = Classes/IDMContentUnavailableView.xib; sourceTree = "<group>"; };
@@ -67,8 +69,6 @@
 		95CAE532182D5FCA00CE66AD /* IDMViewControllerStatesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IDMViewControllerStatesTests-Info.plist"; sourceTree = "<group>"; };
 		95CAE534182D5FCA00CE66AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		95CAE536182D5FCA00CE66AD /* IDMLoadingViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDMLoadingViewTests.m; sourceTree = "<group>"; };
-		95CAE552182D658300CE66AD /* UIViewController+States.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+States.h"; sourceTree = "<group>"; };
-		95CAE553182D658300CE66AD /* UIViewController+States.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+States.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,8 +204,8 @@
 		95CAE555182D658600CE66AD /* UIViewController + States */ = {
 			isa = PBXGroup;
 			children = (
-				95CAE552182D658300CE66AD /* UIViewController+States.h */,
-				95CAE553182D658300CE66AD /* UIViewController+States.m */,
+				9518F34D187C7D8F005FE2DD /* UIViewController+States.h */,
+				9518F34E187C7D8F005FE2DD /* UIViewController+States.m */,
 			);
 			name = "UIViewController + States";
 			sourceTree = "<group>";
@@ -318,8 +318,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9518F34F187C7D8F005FE2DD /* UIViewController+States.m in Sources */,
 				95BCBF82187C75EB00D5AEAB /* IDMContentUnavailableView.m in Sources */,
-				95CAE554182D658300CE66AD /* UIViewController+States.m in Sources */,
 				95CAE516182D5FCA00CE66AD /* AppDelegate.m in Sources */,
 				95BCBF86187C75EF00D5AEAB /* IDMLoadingView.m in Sources */,
 				95CAE51F182D5FCA00CE66AD /* MasterViewController.m in Sources */,
