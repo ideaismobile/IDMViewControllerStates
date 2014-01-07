@@ -6,9 +6,9 @@
 //  Copyright 2009-2011 Sam Soffes. All rights reserved.
 //
 
-#import "SAMLoadingView.h"
+#import "IDMLoadingView.h"
 
-@implementation SAMLoadingView
+@implementation IDMLoadingView
 
 static CGFloat const kSAMLoadingViewInteriorPadding = 20.0f;
 static CGFloat const kSAMLoadingViewIndicatorSize = 20.0f;
@@ -124,7 +124,6 @@ static CGFloat const kSAMLoadingViewIndicatorRightMargin = 8.0f;
 - (void)initialize {
 	// View defaults
 	self.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-	self.backgroundColor = [UIColor whiteColor];
 	self.opaque = YES;
 	self.contentMode = UIViewContentModeRedraw;
 

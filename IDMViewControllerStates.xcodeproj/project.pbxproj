@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95BCBF82187C75EB00D5AEAB /* IDMContentUnavailableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BCBF80187C75EA00D5AEAB /* IDMContentUnavailableView.m */; };
+		95BCBF83187C75EB00D5AEAB /* IDMContentUnavailableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95BCBF81187C75EA00D5AEAB /* IDMContentUnavailableView.xib */; };
+		95BCBF86187C75EF00D5AEAB /* IDMLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BCBF85187C75EF00D5AEAB /* IDMLoadingView.m */; };
 		95CAE506182D5FCA00CE66AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95CAE505182D5FCA00CE66AD /* Foundation.framework */; };
 		95CAE508182D5FCA00CE66AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95CAE507182D5FCA00CE66AD /* CoreGraphics.framework */; };
 		95CAE50A182D5FCA00CE66AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95CAE509182D5FCA00CE66AD /* UIKit.framework */; };
@@ -23,9 +26,7 @@
 		95CAE52D182D5FCA00CE66AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95CAE509182D5FCA00CE66AD /* UIKit.framework */; };
 		95CAE535182D5FCA00CE66AD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95CAE533182D5FCA00CE66AD /* InfoPlist.strings */; };
 		95CAE537182D5FCA00CE66AD /* IDMLoadingViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CAE536182D5FCA00CE66AD /* IDMLoadingViewTests.m */; };
-		95CAE54F182D648600CE66AD /* UIViewControllerContentUnavailableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CAE54E182D648600CE66AD /* UIViewControllerContentUnavailableView.m */; };
 		95CAE554182D658300CE66AD /* UIViewController+States.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CAE553182D658300CE66AD /* UIViewController+States.m */; };
-		95CAE559182D6BB800CE66AD /* SAMLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CAE558182D6BB800CE66AD /* SAMLoadingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,14 +40,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		95CAE502182D5FCA00CE66AD /* IDMLoadingView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDMLoadingView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95BCBF7F187C75EA00D5AEAB /* IDMContentUnavailableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IDMContentUnavailableView.h; path = Classes/IDMContentUnavailableView.h; sourceTree = "<group>"; };
+		95BCBF80187C75EA00D5AEAB /* IDMContentUnavailableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IDMContentUnavailableView.m; path = Classes/IDMContentUnavailableView.m; sourceTree = "<group>"; };
+		95BCBF81187C75EA00D5AEAB /* IDMContentUnavailableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = IDMContentUnavailableView.xib; path = Classes/IDMContentUnavailableView.xib; sourceTree = "<group>"; };
+		95BCBF84187C75EF00D5AEAB /* IDMLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IDMLoadingView.h; path = Classes/IDMLoadingView.h; sourceTree = "<group>"; };
+		95BCBF85187C75EF00D5AEAB /* IDMLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IDMLoadingView.m; path = Classes/IDMLoadingView.m; sourceTree = "<group>"; };
+		95CAE502182D5FCA00CE66AD /* IDMViewControllerStates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDMViewControllerStates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95CAE505182D5FCA00CE66AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		95CAE507182D5FCA00CE66AD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		95CAE509182D5FCA00CE66AD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		95CAE50D182D5FCA00CE66AD /* IDMLoadingView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IDMLoadingView-Info.plist"; sourceTree = "<group>"; };
+		95CAE50D182D5FCA00CE66AD /* IDMViewControllerStates-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IDMViewControllerStates-Info.plist"; sourceTree = "<group>"; };
 		95CAE50F182D5FCA00CE66AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		95CAE511182D5FCA00CE66AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		95CAE513182D5FCA00CE66AD /* IDMLoadingView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IDMLoadingView-Prefix.pch"; sourceTree = "<group>"; };
+		95CAE513182D5FCA00CE66AD /* IDMViewControllerStates-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IDMViewControllerStates-Prefix.pch"; sourceTree = "<group>"; };
 		95CAE514182D5FCA00CE66AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		95CAE515182D5FCA00CE66AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		95CAE518182D5FCA00CE66AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -56,17 +62,13 @@
 		95CAE520182D5FCA00CE66AD /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		95CAE521182D5FCA00CE66AD /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		95CAE523182D5FCA00CE66AD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		95CAE529182D5FCA00CE66AD /* IDMLoadingViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IDMLoadingViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95CAE529182D5FCA00CE66AD /* IDMViewControllerStatesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IDMViewControllerStatesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95CAE52A182D5FCA00CE66AD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		95CAE532182D5FCA00CE66AD /* IDMLoadingViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IDMLoadingViewTests-Info.plist"; sourceTree = "<group>"; };
+		95CAE532182D5FCA00CE66AD /* IDMViewControllerStatesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IDMViewControllerStatesTests-Info.plist"; sourceTree = "<group>"; };
 		95CAE534182D5FCA00CE66AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		95CAE536182D5FCA00CE66AD /* IDMLoadingViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDMLoadingViewTests.m; sourceTree = "<group>"; };
-		95CAE54D182D648600CE66AD /* UIViewControllerContentUnavailableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewControllerContentUnavailableView.h; sourceTree = "<group>"; };
-		95CAE54E182D648600CE66AD /* UIViewControllerContentUnavailableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerContentUnavailableView.m; sourceTree = "<group>"; };
 		95CAE552182D658300CE66AD /* UIViewController+States.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+States.h"; sourceTree = "<group>"; };
 		95CAE553182D658300CE66AD /* UIViewController+States.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+States.m"; sourceTree = "<group>"; };
-		95CAE557182D6BB800CE66AD /* SAMLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMLoadingView.h; sourceTree = "<group>"; };
-		95CAE558182D6BB800CE66AD /* SAMLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMLoadingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,7 @@
 			children = (
 				95CAE550182D64CF00CE66AD /* Categories */,
 				95CAE54A182D645C00CE66AD /* Views */,
-				95CAE50B182D5FCA00CE66AD /* IDMLoadingViewDemo */,
+				95CAE50B182D5FCA00CE66AD /* IDMViewControllerStatesDemo */,
 				95CAE530182D5FCA00CE66AD /* IDMLoadingViewTests */,
 				95CAE504182D5FCA00CE66AD /* Frameworks */,
 				95CAE503182D5FCA00CE66AD /* Products */,
@@ -108,8 +110,8 @@
 		95CAE503182D5FCA00CE66AD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				95CAE502182D5FCA00CE66AD /* IDMLoadingView.app */,
-				95CAE529182D5FCA00CE66AD /* IDMLoadingViewTests.xctest */,
+				95CAE502182D5FCA00CE66AD /* IDMViewControllerStates.app */,
+				95CAE529182D5FCA00CE66AD /* IDMViewControllerStatesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,7 +127,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		95CAE50B182D5FCA00CE66AD /* IDMLoadingViewDemo */ = {
+		95CAE50B182D5FCA00CE66AD /* IDMViewControllerStatesDemo */ = {
 			isa = PBXGroup;
 			children = (
 				95CAE514182D5FCA00CE66AD /* AppDelegate.h */,
@@ -139,17 +141,17 @@
 				95CAE523182D5FCA00CE66AD /* Images.xcassets */,
 				95CAE50C182D5FCA00CE66AD /* Supporting Files */,
 			);
-			name = IDMLoadingViewDemo;
+			name = IDMViewControllerStatesDemo;
 			path = IDMLoadingView;
 			sourceTree = "<group>";
 		};
 		95CAE50C182D5FCA00CE66AD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				95CAE50D182D5FCA00CE66AD /* IDMLoadingView-Info.plist */,
+				95CAE50D182D5FCA00CE66AD /* IDMViewControllerStates-Info.plist */,
 				95CAE50E182D5FCA00CE66AD /* InfoPlist.strings */,
 				95CAE511182D5FCA00CE66AD /* main.m */,
-				95CAE513182D5FCA00CE66AD /* IDMLoadingView-Prefix.pch */,
+				95CAE513182D5FCA00CE66AD /* IDMViewControllerStates-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -166,7 +168,7 @@
 		95CAE531182D5FCA00CE66AD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				95CAE532182D5FCA00CE66AD /* IDMLoadingViewTests-Info.plist */,
+				95CAE532182D5FCA00CE66AD /* IDMViewControllerStatesTests-Info.plist */,
 				95CAE533182D5FCA00CE66AD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -175,7 +177,7 @@
 		95CAE54A182D645C00CE66AD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				95CAE556182D6BAB00CE66AD /* SAMLoadingView */,
+				95CAE556182D6BAB00CE66AD /* Loading View */,
 				95CAE54C182D646800CE66AD /* Content Unavailable View */,
 			);
 			name = Views;
@@ -184,8 +186,9 @@
 		95CAE54C182D646800CE66AD /* Content Unavailable View */ = {
 			isa = PBXGroup;
 			children = (
-				95CAE54D182D648600CE66AD /* UIViewControllerContentUnavailableView.h */,
-				95CAE54E182D648600CE66AD /* UIViewControllerContentUnavailableView.m */,
+				95BCBF7F187C75EA00D5AEAB /* IDMContentUnavailableView.h */,
+				95BCBF80187C75EA00D5AEAB /* IDMContentUnavailableView.m */,
+				95BCBF81187C75EA00D5AEAB /* IDMContentUnavailableView.xib */,
 			);
 			name = "Content Unavailable View";
 			sourceTree = "<group>";
@@ -207,21 +210,21 @@
 			name = "UIViewController + States";
 			sourceTree = "<group>";
 		};
-		95CAE556182D6BAB00CE66AD /* SAMLoadingView */ = {
+		95CAE556182D6BAB00CE66AD /* Loading View */ = {
 			isa = PBXGroup;
 			children = (
-				95CAE557182D6BB800CE66AD /* SAMLoadingView.h */,
-				95CAE558182D6BB800CE66AD /* SAMLoadingView.m */,
+				95BCBF84187C75EF00D5AEAB /* IDMLoadingView.h */,
+				95BCBF85187C75EF00D5AEAB /* IDMLoadingView.m */,
 			);
-			name = SAMLoadingView;
+			name = "Loading View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		95CAE501182D5FCA00CE66AD /* IDMLoadingView */ = {
+		95CAE501182D5FCA00CE66AD /* IDMViewControllerStates */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95CAE53A182D5FCA00CE66AD /* Build configuration list for PBXNativeTarget "IDMLoadingView" */;
+			buildConfigurationList = 95CAE53A182D5FCA00CE66AD /* Build configuration list for PBXNativeTarget "IDMViewControllerStates" */;
 			buildPhases = (
 				95CAE4FE182D5FCA00CE66AD /* Sources */,
 				95CAE4FF182D5FCA00CE66AD /* Frameworks */,
@@ -231,14 +234,14 @@
 			);
 			dependencies = (
 			);
-			name = IDMLoadingView;
+			name = IDMViewControllerStates;
 			productName = IDMLoadingView;
-			productReference = 95CAE502182D5FCA00CE66AD /* IDMLoadingView.app */;
+			productReference = 95CAE502182D5FCA00CE66AD /* IDMViewControllerStates.app */;
 			productType = "com.apple.product-type.application";
 		};
-		95CAE528182D5FCA00CE66AD /* IDMLoadingViewTests */ = {
+		95CAE528182D5FCA00CE66AD /* IDMViewControllerStatesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95CAE53D182D5FCA00CE66AD /* Build configuration list for PBXNativeTarget "IDMLoadingViewTests" */;
+			buildConfigurationList = 95CAE53D182D5FCA00CE66AD /* Build configuration list for PBXNativeTarget "IDMViewControllerStatesTests" */;
 			buildPhases = (
 				95CAE525182D5FCA00CE66AD /* Sources */,
 				95CAE526182D5FCA00CE66AD /* Frameworks */,
@@ -249,9 +252,9 @@
 			dependencies = (
 				95CAE52F182D5FCA00CE66AD /* PBXTargetDependency */,
 			);
-			name = IDMLoadingViewTests;
+			name = IDMViewControllerStatesTests;
 			productName = IDMLoadingViewTests;
-			productReference = 95CAE529182D5FCA00CE66AD /* IDMLoadingViewTests.xctest */;
+			productReference = 95CAE529182D5FCA00CE66AD /* IDMViewControllerStatesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -268,7 +271,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 95CAE4FD182D5FCA00CE66AD /* Build configuration list for PBXProject "IDMLoadingView" */;
+			buildConfigurationList = 95CAE4FD182D5FCA00CE66AD /* Build configuration list for PBXProject "IDMViewControllerStates" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -281,8 +284,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				95CAE501182D5FCA00CE66AD /* IDMLoadingView */,
-				95CAE528182D5FCA00CE66AD /* IDMLoadingViewTests */,
+				95CAE501182D5FCA00CE66AD /* IDMViewControllerStates */,
+				95CAE528182D5FCA00CE66AD /* IDMViewControllerStatesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -295,6 +298,7 @@
 				95CAE51C182D5FCA00CE66AD /* Main_iPad.storyboard in Resources */,
 				95CAE524182D5FCA00CE66AD /* Images.xcassets in Resources */,
 				95CAE519182D5FCA00CE66AD /* Main_iPhone.storyboard in Resources */,
+				95BCBF83187C75EB00D5AEAB /* IDMContentUnavailableView.xib in Resources */,
 				95CAE510182D5FCA00CE66AD /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,13 +318,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95BCBF82187C75EB00D5AEAB /* IDMContentUnavailableView.m in Sources */,
 				95CAE554182D658300CE66AD /* UIViewController+States.m in Sources */,
 				95CAE516182D5FCA00CE66AD /* AppDelegate.m in Sources */,
+				95BCBF86187C75EF00D5AEAB /* IDMLoadingView.m in Sources */,
 				95CAE51F182D5FCA00CE66AD /* MasterViewController.m in Sources */,
 				95CAE512182D5FCA00CE66AD /* main.m in Sources */,
 				95CAE522182D5FCA00CE66AD /* DetailViewController.m in Sources */,
-				95CAE559182D6BB800CE66AD /* SAMLoadingView.m in Sources */,
-				95CAE54F182D648600CE66AD /* UIViewControllerContentUnavailableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +341,7 @@
 /* Begin PBXTargetDependency section */
 		95CAE52F182D5FCA00CE66AD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 95CAE501182D5FCA00CE66AD /* IDMLoadingView */;
+			target = 95CAE501182D5FCA00CE66AD /* IDMViewControllerStates */;
 			targetProxy = 95CAE52E182D5FCA00CE66AD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -458,9 +462,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IDMLoadingView/IDMLoadingView-Prefix.pch";
-				INFOPLIST_FILE = "IDMLoadingView/IDMLoadingView-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "IDMLoadingView/IDMViewControllerStates-Prefix.pch";
+				INFOPLIST_FILE = "IDMLoadingView/IDMViewControllerStates-Info.plist";
+				PRODUCT_NAME = IDMViewControllerStates;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -471,9 +475,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IDMLoadingView/IDMLoadingView-Prefix.pch";
-				INFOPLIST_FILE = "IDMLoadingView/IDMLoadingView-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "IDMLoadingView/IDMViewControllerStates-Prefix.pch";
+				INFOPLIST_FILE = "IDMLoadingView/IDMViewControllerStates-Info.plist";
+				PRODUCT_NAME = IDMViewControllerStates;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -494,8 +498,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "IDMLoadingViewTests/IDMLoadingViewTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "IDMLoadingViewTests/IDMViewControllerStatesTests-Info.plist";
+				PRODUCT_NAME = IDMViewControllerStatesTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -513,8 +517,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IDMLoadingView/IDMLoadingView-Prefix.pch";
-				INFOPLIST_FILE = "IDMLoadingViewTests/IDMLoadingViewTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "IDMLoadingViewTests/IDMViewControllerStatesTests-Info.plist";
+				PRODUCT_NAME = IDMViewControllerStatesTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -523,7 +527,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		95CAE4FD182D5FCA00CE66AD /* Build configuration list for PBXProject "IDMLoadingView" */ = {
+		95CAE4FD182D5FCA00CE66AD /* Build configuration list for PBXProject "IDMViewControllerStates" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95CAE538182D5FCA00CE66AD /* Debug */,
@@ -532,7 +536,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95CAE53A182D5FCA00CE66AD /* Build configuration list for PBXNativeTarget "IDMLoadingView" */ = {
+		95CAE53A182D5FCA00CE66AD /* Build configuration list for PBXNativeTarget "IDMViewControllerStates" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95CAE53B182D5FCA00CE66AD /* Debug */,
@@ -541,7 +545,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95CAE53D182D5FCA00CE66AD /* Build configuration list for PBXNativeTarget "IDMLoadingViewTests" */ = {
+		95CAE53D182D5FCA00CE66AD /* Build configuration list for PBXNativeTarget "IDMViewControllerStatesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95CAE53E182D5FCA00CE66AD /* Debug */,

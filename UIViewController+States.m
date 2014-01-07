@@ -7,7 +7,11 @@
 //
 
 #import "UIViewController+States.h"
-#import "SAMLoadingView.h"
+#import "IDMLoadingView.h"
+#import <objc/runtime.h>
+
+static char const * const IDMLoadingViewKey = "IDMLoadingViewKey";
+static char const * const IDMContentUnavailableViewKey = "IDMContentUnavailableViewKey";
 
 @implementation UIViewController (States)
 
@@ -17,17 +21,36 @@
                               [[UIApplication sharedApplication] keyWindow].bounds);
 }
 
-- (SAMLoadingView*)loadingView
+- (IDMLoadingView*)loadingView
 {
-    static SAMLoadingView *_loadingView = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        _loadingView = [[SAMLoadingView alloc] initWithFrame:[self visibleRect]];
+    IDMLoadingView *_loadingView = objc_getAssociatedObject(self, IDMLoadingViewKey);
+
+    if (_loadingView == nil)
+    {
+        _loadingView = [[IDMLoadingView alloc] initWithFrame:[self visibleRect]];
         _loadingView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         [self.view addSubview:_loadingView];
-    });
+        
+        objc_setAssociatedObject(self, IDMLoadingViewKey, _loadingView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }
     
     return _loadingView;
+}
+
+- (IDMContentUnavailableView*)contentUnavailableView
+{
+    IDMContentUnavailableView *_contentUnavailableView = objc_getAssociatedObject(self, IDMContentUnavailableViewKey);
+    if(_contentUnavailableView == nil)
+    {
+        _contentUnavailableView = [[IDMContentUnavailableView alloc] initWithFrame:[self visibleRect]];
+        _contentUnavailableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+
+        [self.view addSubview:_contentUnavailableView];
+        
+        objc_setAssociatedObject(self, IDMContentUnavailableViewKey, _contentUnavailableView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }
+    
+    return _contentUnavailableView;
 }
 
 @end

@@ -36,11 +36,18 @@
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     
+    _objects = [NSMutableArray array];
+    [_objects addObject:@"Test"];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [self.loadingView show];
+    [self.loadingView performSelector:@selector(dismiss) withObject:nil afterDelay:3.0f];
+    
+    [self.contentUnavailableView showWithTitle:@"Falha" message:@"Deu Ruim" reloadButtonPressedBlock:^{
+        NSLog(@"button pressed");
+    }];
 }
 
 - (void)didReceiveMemoryWarning

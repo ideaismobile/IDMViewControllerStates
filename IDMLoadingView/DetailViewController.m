@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "UIViewController+States.h"
 
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -38,6 +39,8 @@
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [self.detailItem description];
     }
+    
+    [self.loadingView show];
 }
 
 - (void)viewDidLoad

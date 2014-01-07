@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SAMLoadingView.h"
+#import "IDMLoadingView.h"
+#import "IDMContentUnavailableView.h"
 
 @interface UIViewController (States)
 
-@property (nonatomic, readonly) SAMLoadingView *loadingView;
+@property (nonatomic, readonly) IDMLoadingView *loadingView;
+@property (nonatomic, readonly) IDMContentUnavailableView *contentUnavailableView;
 
 @end

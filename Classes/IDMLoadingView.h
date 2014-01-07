@@ -14,7 +14,7 @@
  
  This view will automatically center the text and the activity indicator.
  */
-@interface SAMLoadingView : UIView
+@interface IDMLoadingView : UIView
 
 /**
  The text label that is displayed to the user. (read-only)
