@@ -10,6 +10,11 @@
 #import "IDMLoadingView.h"
 #import "IDMContentUnavailableView.h"
 
+#ifndef IDMViewControllerStatesLocalizedStrings
+#define IDMViewControllerStatesLocalizedStrings(key) \
+NSLocalizedStringFromTableInBundle(key, @"IDMViewControllerStates", [NSBundle bundleWithPath:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"IDMViewControllerStates.bundle"]], nil)
+#endif
+
 @interface UIViewController (States)
 
 @property (nonatomic, readonly) IDMLoadingView *loadingView;

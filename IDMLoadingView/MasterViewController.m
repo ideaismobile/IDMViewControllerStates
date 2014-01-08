@@ -43,11 +43,12 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [self.loadingView show];
+    [self.loadingView setBackgroundColor:[UIColor lightGrayColor]];
     [self.loadingView performSelector:@selector(dismiss) withObject:nil afterDelay:3.0f];
     
-    [self.contentUnavailableView showWithTitle:@"Falha" message:@"Deu Ruim" reloadButtonPressedBlock:^{
-        NSLog(@"button pressed");
-    }];
+//    [self.contentUnavailableView showWithTitle:@"Falha" message:@"Deu Ruim" reloadButtonPressedBlock:^{
+//        NSLog(@"button pressed");
+//    }];
 }
 
 - (void)didReceiveMemoryWarning

@@ -11,6 +11,7 @@
 		95BCBF82187C75EB00D5AEAB /* IDMContentUnavailableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BCBF80187C75EA00D5AEAB /* IDMContentUnavailableView.m */; };
 		95BCBF83187C75EB00D5AEAB /* IDMContentUnavailableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95BCBF81187C75EA00D5AEAB /* IDMContentUnavailableView.xib */; };
 		95BCBF86187C75EF00D5AEAB /* IDMLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BCBF85187C75EF00D5AEAB /* IDMLoadingView.m */; };
+		95C58E2C187E0BF400E6FDD4 /* IDMViewControllerStates.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95C58E2B187E0BF400E6FDD4 /* IDMViewControllerStates.bundle */; };
 		95CAE506182D5FCA00CE66AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95CAE505182D5FCA00CE66AD /* Foundation.framework */; };
 		95CAE508182D5FCA00CE66AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95CAE507182D5FCA00CE66AD /* CoreGraphics.framework */; };
 		95CAE50A182D5FCA00CE66AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95CAE509182D5FCA00CE66AD /* UIKit.framework */; };
@@ -47,6 +48,7 @@
 		95BCBF81187C75EA00D5AEAB /* IDMContentUnavailableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = IDMContentUnavailableView.xib; path = Classes/IDMContentUnavailableView.xib; sourceTree = "<group>"; };
 		95BCBF84187C75EF00D5AEAB /* IDMLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IDMLoadingView.h; path = Classes/IDMLoadingView.h; sourceTree = "<group>"; };
 		95BCBF85187C75EF00D5AEAB /* IDMLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IDMLoadingView.m; path = Classes/IDMLoadingView.m; sourceTree = "<group>"; };
+		95C58E2B187E0BF400E6FDD4 /* IDMViewControllerStates.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IDMViewControllerStates.bundle; sourceTree = "<group>"; };
 		95CAE502182D5FCA00CE66AD /* IDMViewControllerStates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDMViewControllerStates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95CAE505182D5FCA00CE66AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		95CAE507182D5FCA00CE66AD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -98,6 +100,7 @@
 		95CAE4F9182D5FCA00CE66AD = {
 			isa = PBXGroup;
 			children = (
+				95C58E2B187E0BF400E6FDD4 /* IDMViewControllerStates.bundle */,
 				95CAE550182D64CF00CE66AD /* Categories */,
 				95CAE54A182D645C00CE66AD /* Views */,
 				95CAE50B182D5FCA00CE66AD /* IDMViewControllerStatesDemo */,
@@ -298,6 +301,7 @@
 				95CAE51C182D5FCA00CE66AD /* Main_iPad.storyboard in Resources */,
 				95CAE524182D5FCA00CE66AD /* Images.xcassets in Resources */,
 				95CAE519182D5FCA00CE66AD /* Main_iPhone.storyboard in Resources */,
+				95C58E2C187E0BF400E6FDD4 /* IDMViewControllerStates.bundle in Resources */,
 				95BCBF83187C75EB00D5AEAB /* IDMContentUnavailableView.xib in Resources */,
 				95CAE510182D5FCA00CE66AD /* InfoPlist.strings in Resources */,
 			);

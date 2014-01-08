@@ -7,6 +7,7 @@
 //
 
 #import "IDMLoadingView.h"
+#import "UIViewController+States.h"
 
 @implementation IDMLoadingView
 
@@ -22,7 +23,7 @@ static CGFloat const kSAMLoadingViewIndicatorRightMargin = 8.0f;
 - (UILabel *)textLabel {
 	if (!_textLabel) {
 		_textLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-		_textLabel.text = @"Loading…";
+		_textLabel.text = IDMViewControllerStatesLocalizedStrings(@"Loading…");
 		_textLabel.font = [UIFont systemFontOfSize:16.0f];
 		_textLabel.textColor = [UIColor darkGrayColor];
 		_textLabel.shadowColor = [UIColor whiteColor];
