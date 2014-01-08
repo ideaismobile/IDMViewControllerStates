@@ -110,6 +110,7 @@ static CGFloat const kSAMLoadingViewIndicatorRightMargin = 8.0f;
 - (void)show
 {
     [self setHidden:NO];
+    [self.superview bringSubviewToFront:self];
     [self setSuperviewScrollEnabled:NO];
 }
 
