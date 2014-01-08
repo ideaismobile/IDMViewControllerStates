@@ -42,13 +42,21 @@ reloadButtonPressedBlock:(IDMReloadButtonPressedBlock)block
 {
     self.titleLabel.text = title;
     self.messageLabel.text = message;
-    self.reloadButtonPressedBlock = [block copy];
+    if (block == nil)
+    {
+        [self.reloadButton setHidden:YES];
+    }
+    else
+    {
+        self.reloadButtonPressedBlock = [block copy];
+    }
     [self show];
 }
 
 - (void)show
 {
     [self setHidden:NO];
+    [self.superview bringSubviewToFront:self];
     [self setSuperviewScrollEnabled:NO];
 }
 

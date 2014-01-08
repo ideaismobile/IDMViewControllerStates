@@ -11,21 +11,21 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SsM-KK-1QQ">
-                    <rect key="frame" x="10" y="128" width="300" height="223"/>
+                    <rect key="frame" x="10" y="140" width="300" height="200"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificamos um problema em nossos servidores. Por favor, tente novamente em alguns instantes." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="acA-fj-b6S">
-                            <rect key="frame" x="0.0" y="77" width="300" height="80"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificamos um problema em nossos servidores. Por favor, tente novamente em alguns instantes." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="290" translatesAutoresizingMaskIntoConstraints="NO" id="acA-fj-b6S">
+                            <rect key="frame" x="5" y="60" width="290" height="80"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="80" id="19A-rd-ZBP"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <color key="textColor" red="0.31372549019607843" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogP-mc-Jud">
-                            <rect key="frame" x="0.0" y="165" width="300" height="58"/>
+                            <rect key="frame" x="0.0" y="140" width="300" height="60"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <state key="normal" title="Recarregar">
@@ -37,13 +37,13 @@
                             </connections>
                         </button>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Falha Na Conexão" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="uY6-nR-rDf">
-                            <rect key="frame" x="0.0" y="0.0" width="300" height="69"/>
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="69" id="o98-cJ-vXO"/>
+                                <constraint firstAttribute="height" constant="60" id="o98-cJ-vXO"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -51,14 +51,14 @@
                     <constraints>
                         <constraint firstItem="ogP-mc-Jud" firstAttribute="leading" secondItem="SsM-KK-1QQ" secondAttribute="leading" id="1ue-Ce-b74"/>
                         <constraint firstAttribute="trailing" secondItem="uY6-nR-rDf" secondAttribute="trailing" id="5IU-Ea-w6g"/>
-                        <constraint firstItem="acA-fj-b6S" firstAttribute="top" secondItem="uY6-nR-rDf" secondAttribute="bottom" constant="8" id="IZf-bF-Qgu"/>
+                        <constraint firstItem="acA-fj-b6S" firstAttribute="top" secondItem="uY6-nR-rDf" secondAttribute="bottom" id="IZf-bF-Qgu"/>
                         <constraint firstItem="uY6-nR-rDf" firstAttribute="leading" secondItem="SsM-KK-1QQ" secondAttribute="leading" id="IgT-nO-W3e"/>
-                        <constraint firstItem="acA-fj-b6S" firstAttribute="leading" secondItem="SsM-KK-1QQ" secondAttribute="leading" id="M8a-6j-bJc"/>
+                        <constraint firstItem="acA-fj-b6S" firstAttribute="leading" secondItem="SsM-KK-1QQ" secondAttribute="leading" constant="5" id="M8a-6j-bJc"/>
                         <constraint firstAttribute="bottom" secondItem="ogP-mc-Jud" secondAttribute="bottom" id="N5H-fu-Mft"/>
-                        <constraint firstAttribute="trailing" secondItem="acA-fj-b6S" secondAttribute="trailing" id="P0S-t6-yrE"/>
+                        <constraint firstAttribute="trailing" secondItem="acA-fj-b6S" secondAttribute="trailing" constant="5" id="P0S-t6-yrE"/>
                         <constraint firstItem="uY6-nR-rDf" firstAttribute="top" secondItem="SsM-KK-1QQ" secondAttribute="top" id="bhv-RI-2H6"/>
-                        <constraint firstItem="ogP-mc-Jud" firstAttribute="top" secondItem="acA-fj-b6S" secondAttribute="bottom" constant="8" id="cNU-Aw-Cu5"/>
-                        <constraint firstAttribute="height" constant="223" id="hJn-rX-tvJ"/>
+                        <constraint firstItem="ogP-mc-Jud" firstAttribute="top" secondItem="acA-fj-b6S" secondAttribute="bottom" id="cNU-Aw-Cu5"/>
+                        <constraint firstAttribute="height" constant="200" id="hJn-rX-tvJ"/>
                         <constraint firstAttribute="trailing" secondItem="ogP-mc-Jud" secondAttribute="trailing" id="i5s-bd-ZVG"/>
                     </constraints>
                 </view>
