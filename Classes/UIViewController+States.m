@@ -15,19 +15,13 @@ static char const * const IDMContentUnavailableViewKey = "IDMContentUnavailableV
 
 @implementation UIViewController (States)
 
-- (CGRect)visibleRect
-{
-    return CGRectIntersection(self.view.bounds,
-                              [[UIApplication sharedApplication] keyWindow].bounds);
-}
-
 - (IDMLoadingView*)loadingView
 {
     IDMLoadingView *_loadingView = objc_getAssociatedObject(self, IDMLoadingViewKey);
 
     if (_loadingView == nil)
     {
-        _loadingView = [[IDMLoadingView alloc] initWithFrame:[self visibleRect]];
+        _loadingView = [[IDMLoadingView alloc] initWithFrame:self.view.bounds];
         _loadingView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         [self.view addSubview:_loadingView];
         
@@ -42,7 +36,7 @@ static char const * const IDMContentUnavailableViewKey = "IDMContentUnavailableV
     IDMContentUnavailableView *_contentUnavailableView = objc_getAssociatedObject(self, IDMContentUnavailableViewKey);
     if(_contentUnavailableView == nil)
     {
-        _contentUnavailableView = [[IDMContentUnavailableView alloc] initWithFrame:[self visibleRect]];
+        _contentUnavailableView = [[IDMContentUnavailableView alloc] initWithFrame:self.view.bounds];
         _contentUnavailableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 
         [self.view addSubview:_contentUnavailableView];
