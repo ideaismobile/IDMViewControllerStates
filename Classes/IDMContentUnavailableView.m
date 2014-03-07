@@ -29,7 +29,10 @@
 	
 	self.reloadButton.layer.cornerRadius	= kBUTTON_CORNER_RADIUS;
 	self.reloadButton.layer.borderWidth		= kBORDER_WIDTH;
-	self.reloadButton.layer.borderColor		= self.reloadButton.titleLabel.textColor.CGColor;
+    
+    UIColor *globalColor                = [UIWindow appearance].tintColor;
+    self.reloadButton.tintColor         = globalColor;
+    self.reloadButton.layer.borderColor = globalColor.CGColor;
 }
 
 - (IBAction)reloadButtonTouched
