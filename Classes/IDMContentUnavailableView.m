@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Ideais. All rights reserved.
 //
 
-#define kBUTTON_CORNER_RADIUS	5
-#define kBORDER_WIDTH			1
-#define kBUTTON_DEFAULT_TITLE	@"tentar novamente"
+#define kBUTTON_CORNER_RADIUS  5
+#define kBORDER_WIDTH          1
+#define kBUTTON_DEFAULT_TITLE  @"tentar novamente"
 
 #import "IDMContentUnavailableView.h"
 
@@ -27,11 +27,11 @@
 {
 	[super awakeFromNib];
 	
-	self.reloadButton.layer.cornerRadius	= kBUTTON_CORNER_RADIUS;
-	self.reloadButton.layer.borderWidth		= kBORDER_WIDTH;
+	self.reloadButton.layer.cornerRadius = kBUTTON_CORNER_RADIUS;
+	self.reloadButton.layer.borderWidth = kBORDER_WIDTH;
     
-    UIColor *globalColor                = [UIWindow appearance].tintColor;
-    self.reloadButton.tintColor         = globalColor;
+    UIColor *globalColor = [UIApplication sharedApplication].keyWindow.tintColor;
+    self.reloadButton.tintColor = globalColor;
     self.reloadButton.layer.borderColor = globalColor.CGColor;
 }
 
@@ -57,10 +57,7 @@
 	[self showWithTitle:title message:message buttonTitle:nil reloadButtonPressedBlock:block];
 }
 
-- (void)showWithTitle:(NSString*)title
-              message:(NSString*)message
-		  buttonTitle:(NSString *)buttonTitle
-reloadButtonPressedBlock:(IDMReloadButtonPressedBlock)block
+- (void)showWithTitle:(NSString*)title message:(NSString*)message buttonTitle:(NSString *)buttonTitle reloadButtonPressedBlock:(IDMReloadButtonPressedBlock)block
 {
     self.titleLabel.text = title;
     self.messageLabel.text = message;
